@@ -1,0 +1,11 @@
+[Unit]
+Description=Run kiosk on startup
+After=multi-user.target
+
+[Service]
+ExecStart=/home/application/kiosk-startup.sh start
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
