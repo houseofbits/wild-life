@@ -1,2 +1,1 @@
-# wild-life
-Wild life display for kiosk touchscreen
+# W.I.P.

@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: gray;
+    font-family: Arimo;
+    user-select: none;
+}
+
+.content-1080p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+}
+
+.screen {
+    width: 1920px;
+    height: 1080px;
+    background: white;
+    border:  dashed 1px gray;
+    overflow: hidden;
+}
+
+h1 {
+    @apply text-2xl font-bold m-4;
+}
+
+h2 {
+    @apply text-xl font-bold m-2;
+}
+
+p{
+    @apply m-2;
+}
+
+.btn {
+    @apply font-bold py-2 px-4 rounded;
+}
+
+.btn-blue {
+    @apply bg-blue-500 text-white;
+}
+
+.btn-blue:hover {
+    @apply bg-blue-700;
+}
+
+.btn-active {
+    @apply border-4 border-gray-600;
+}
+
+small {
+    font-style: normal;
+    font-weight: normal !important;
+}

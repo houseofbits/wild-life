@@ -1,0 +1,73 @@
+@keyframes slideINLeft {
+    from {
+        left: 1920px;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes slideOUTLeft {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -1920px;
+    }
+}
+
+@keyframes slideINRight {
+    from {
+        left: -1920px;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes slideOUTRight {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 1920px;
+    }
+}
+
+.full-slider-container {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 1920px;
+
+    &.in-left {
+        animation-duration: 500ms;
+        animation-name: slideINLeft;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    &.out-left {
+        animation-duration: 500ms;
+        animation-timing-function: ease-in-out;
+        animation-name: slideOUTLeft;
+    }
+
+    &.in-right {
+        animation-duration: 500ms;
+        animation-name: slideINRight;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    &.out-right {
+        animation-duration: 500ms;
+        animation-timing-function: ease-in-out;
+        animation-name: slideOUTRight;
+    }
+
+}
